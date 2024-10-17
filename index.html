@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
+    <title>My Project</title>
+</head> 
+<body>
+<div class="crud">
+<div class="header">
+    <h1>CRUD</h1>
+    <p>PRODUCT MANAGEMENT SYSTEM</p>
+</div>
+
+<div class="inputs">
+    <input type="text" id="title" placeholder="title">
+    <div class="price">
+        <input  onkeyup="gettotale()" type="number" id="price" placeholder="price">
+        <input  onkeyup="gettotale()" type="number" id="taxas" placeholder="taxas">
+        <input  onkeyup="gettotale()" type="number" id="ads" placeholder="ads">
+        <input  onkeyup="gettotale()" type="number" id="discount" placeholder="discount">
+        <small id="total">      </small>
+    </div>
+    <input type="number" id="count" placeholder="count">
+    <input type="text" id="Category"  placeholder="Category">
+    <button id="submit">Create</button>
+</div>
+
+<div class="output">
+ 
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>Title</td>
+            <td>Price</td>
+            <td>Taxes</td>
+            <td>Ads</td>
+            <td>Discount</td>
+            <td>Category</td>
+            <td>Update</td>
+            <td>Delete</td>
+        </tr>
+
+        <tbody id="tbody">    </tbody>
+
+    </table>
+</div>
+</div>
+
+<script src="Script.js"></script>
+</body>
+
+</html>
